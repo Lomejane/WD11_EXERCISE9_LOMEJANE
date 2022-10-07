@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container { 
+    height: 10vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(100, 100, 51, 0.426);
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav .navigation {
+    font-size: 17px;
+    color: white;
+}
+
+.nav .navigation:hover {
+    color: lightpink;
+    text-shadow: 1px 1px 8px pink;
+    transition: .5s ;
+    cursor: pointer;
+}
+
+.nav .nav-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    color: black;
+}
+
+main {
+    background-color: rgb(252, 174, 144);
+    height: 360vh;
+    width: 100vw;
+}
+
+#home {
+    height: 90vh;
+    width: 100vw;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+}
+
+.home-image {
+    margin-top: 5%;
+    height: 750px;
+    width: 500px;
+}
+
+.computer-image {
+    height: 500px;
+    width: 750px;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-text p {
+    font-size: 20px;
+}
+
+.inquire-button {
+    background-color: white;
+    border: none;
+    color: palevioletred;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    height: 50px;
+    width: 140px;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.inquire-button:active {
+    background-color: lightpink;
+
+}
+
+.inquire-button:hover {
+    background-color: rgba(229, 192, 192, 0.87);
+    transition: .7s;
+    cursor: pointer; 
+
+}
+
+#about {
+    height: 90vh;
+    width: 100vw;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-image {
+    margin-top: 10%;
+    height: 700px;
+}
+
+.about-text {
+    width: 30vw;
+    margin-left: 500px;
+}
+
+.about-text h1 {
+    margin-top: 250px;
+    font-size: 50px;
+}
+
+.about-text p {
+    font-size: 20px;
+}
+
+.resume-button {
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(231, 105, 130);
+    color: white;
+    font-size: 18px;
+}
+
+.resume-button:active {
+    background-color: lightpink;
+
+}
+
+.resume-button:hover {
+    transition: .7s;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(229, 192, 192, 0.87);
+
+}
+
+#projects {
+    height: 90vh;
+    width: 100vw;
+}
+
+.projects-container {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-around;
+    z-index: 0;
+    
+}
+.card {
+    border-radius: 10px;
+    height: 400px;
+    width: 1200px;
+    border: 1px solid lightpink;
+    box-shadow: 5px 10px 8px rgb(92, 89, 89);
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+
+#inquire {
+    height: 90vh;
+}
+
+.inquire-me {
+    display: flex;
+    width: 1200px;
+    height: 700px;
+    margin: 0 400px;
+    margin-top: 10%;
+}
+
+.submit-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 10px;
+    color: white;
+    background-color: rgb(184, 77, 93);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.submit-text h2 {
+    font-size: 50px;
+    margin: 0 60px;
+}
+
+.submit-text p {
+    margin: 20px;
+    margin: 0 50px;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(184, 77, 93);
+    color: white;
+    margin-right: 100px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.submit-form h2 {
+    margin: 80px 0;
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+.submit-form .name, .email, .message {
+    margin-top: 50px;
+}
+
+.submit-form input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+}
+
+.submit button{
+    margin-top: 80px;
+    height: 50px;
+    width: 120px;
+    background-color:  rgb(252, 174, 144);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit button:hover {
+    cursor: pointer;
+    background-color: lightpink;
+    color:black;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(100, 100, 51, 0.426);
+}
+
+footer .container p {
+    text-align: center;
+}
